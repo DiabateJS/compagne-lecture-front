@@ -5,13 +5,13 @@
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
-                <li class="nav-item"><a class="nav-link fw-medium active" aria-current="page" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#books">Books</a></li>
-                <li class="nav-item"><a class="nav-link" href="#libraries">Libraries</a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+                <li class="nav-item"><a class="nav-link fw-medium active" aria-current="page" [routerLink]="['/home']">Accueil</a></li>
+                <!--<li class="nav-item"><a class="nav-link" [routerLink]="['/campagnes']">Campagnes</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/nouvelle-campagne']">Création Campagne</a></li>-->
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Campagnes</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action </a></li>
+                        <li><a class="dropdown-item" [routerLink]="['/nouvelle-campagne']">Nouveau</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['/campagnes']">Liste</a></li>
                     </ul>
                 </li>
             </ul>
